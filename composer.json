@@ -1,0 +1,19 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Affilyadds\\src\\": [
+        "src/"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Affilyadds\\test\\": [
+        "Tests/"
+      ]
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  }
+}
