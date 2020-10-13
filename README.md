@@ -3,7 +3,7 @@
 In this repository you can find the results of the code challenge. 
 
 ## Project Structure
-The results are contained in sub-folders of the 'src' folder;  one for every exercises
+The results are contained in sub-folders of the 'src' folder;  one for every exercises, every class/interface was created in different files, in order to have proper namespaces and improve the readability of the code.
 
 #### Login module refactor: 
 

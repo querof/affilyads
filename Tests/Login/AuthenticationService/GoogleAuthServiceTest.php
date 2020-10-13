@@ -16,17 +16,17 @@ class GoogleAuthServiceTest extends TestCase
     /**
      * @var SimpleAuthenticationService
      */
-    private $GoogleAuthService;
+    private $googleAuthService;
 
     protected function setUp():void
     {
-        $this->GoogleAuthService = new GoogleAuthService();
+        $this->googleAuthService = new GoogleAuthService();
     }
 
     public function testSuccessfulAuthenticate(): void
     {
         $user = new ThirdPartyUser('test_user_name', 'google');
-        $response = $this->GoogleAuthService->authenticate($user);
+        $response = $this->googleAuthService->authenticate($user);
 
         $this->assertTrue($response);
     }
@@ -35,7 +35,7 @@ class GoogleAuthServiceTest extends TestCase
     {
         $user = new NormalUser('test_user_name');
         $this->expectException(InvalidArgumentException::class);
-        $response = $this->GoogleAuthService->authenticate($user);
+        $response = $this->googleAuthService->authenticate($user);
 
         $this->assertTrue($response);
     }
